@@ -4,7 +4,7 @@
 
 Scoop 是一个 Win­dows 包管理工具，类似于 De­bian 的 `apt`、ma­cOS 的`homebrew`。
 
-Scoop主要优点有：开源、、所有安装软件均在一个指定目录。
+Scoop主要优点有：
 
 + 开源
 + 消除权限弹出窗口
