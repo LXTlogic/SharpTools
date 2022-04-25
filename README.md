@@ -9,3 +9,6 @@
 
 ## Scoop指南
 [Scoop指南](https://github.com/LXTlogic/SharpTools/blob/master/Doc/Scoop指南.md)(半成品)
+
+## Markdown语法指南（完成度较高）
+[Markdown笔记](https://github.com/LXTlogic/SharpTools/blob/master/Doc/Markdown笔记.md)
