@@ -1,5 +1,7 @@
 # Scoop 安装配置指北
 
+[TOC]
+
 ## 前言
 
 Scoop 是一个 Win­dows 包管理工具，类似于 De­bian 的 `apt`、ma­cOS 的`homebrew`。
@@ -69,7 +71,25 @@ Scoop默认安装位置是 `C:\Users\scoop` 当然，你也可以通过Windows�
 
 ​	如果下载Scoop的过程中断，那么必须先删除Scoop安装文件夹，再执行以上命令安装。
 
-### 3. 高级安装（官网推荐）（暂搁）
+### 3. 高级安装（官网推荐）
+
+下载Scoop安装程序并使用参数手动执行。
+
+``` powershell
+irm get.scoop.sh -outfile 'install.ps1'		#install.ps1文件默认在终端程序当前所在目录
+```
+
+查看安装程序所有的配置参数
+
+``` powershell
+.\install.ps1 -?
+```
+
+例如，将Scoop安装到自定义目录，将Scoop全局程序配置为自定义目录，并在安装时绕过系统代理：
+
+``` powershell
+.\install.ps1 -ScoopDir 'D:\Applications\Scoop' -ScoopGlobalDir 'F:\GlobalScoopApps' -NoProxy
+```
 
 ---
 
@@ -175,3 +195,10 @@ scoop checkup		#安装各种包时或者进行了一些配置时，可能会造�
 scoop reset app_name		#重置某一软件，或者实现版本切换
 scoop reset *		#重置全部软件
 ```
+
+## 参考链接
+
+1. [ScoopInstaller/Install](https://github.com/ScoopInstaller/Install)
+
+2. [ScoopInstaller/Scoop](https://github.com/ScoopInstaller/Scoop)
+3. [~/Scoop](https://scoop.netlify.app/)
